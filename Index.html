@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<link rel="stylesheet" type="text/css" href="css.css">    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><h1>Bienvenido a calculadora básica</h1> 
+ 
+    <script>
+    /*Con el uso de console.log desarrolla una calculadora que puede a partir de dos números dados
+        desarrollar una operación matemática básica, ya sea suma, resta, multiplicación, y división. Este
+        algoritmo debe ser capaz de arrojar el resultado en de acuerdo a la operación escogida por el
+        usuario.*/
+        
+        alert('Bienvenido a "calculadora básica"');
+        var primero=0;
+        var segundo=0;
+        var operación= "";
+        primero = parseFloat(prompt('Ingrese el primer digito:'));
+        segundo = parseFloat(prompt('Ingrese el segundo digito:'));
+        var operación = prompt("Digite la operación que desea realizar suma, resta, multiplicación, división o potencia");
+        switch(operación) {
+        case 'suma':
+        var resultado= primero+segundo; break;
+        case 'resta':
+        var resultado= primero-segundo; break;
+        case 'multiplicación':
+        var resultado= primero*segundo; break;
+        case 'división':
+        var resultado= primero/segundo; break;
+        case 'potencia':
+        var resultado= primero**segundo; break;
+        }
+        document.write("El resultado de la "  +operación+  " es "  +resultado);  
+         </script>      
+    
+</body>
+</html> 
